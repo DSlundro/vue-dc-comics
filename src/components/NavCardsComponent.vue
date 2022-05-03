@@ -1,6 +1,7 @@
 <template>
     <section>
         <div class="container py-5">
+            
             <div class="row justify-content-around">
                 <div class="col-2">
                     <div class="d-flex justify-content-center align-items-center">
@@ -99,7 +100,10 @@ export default {
 
 <style lang="scss" scoped>
 section{
+    position: relative;
+    z-index: 1;
     background-color: #0282F9;
+    
     img{width: 40px;}
     p{
         text-transform: uppercase; 

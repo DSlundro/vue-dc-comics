@@ -32,5 +32,6 @@ export default {
   a{
     text-decoration: none;
   }
+  img{widows: 100%;}
 }
 </style>

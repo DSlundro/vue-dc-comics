@@ -1,11 +1,71 @@
 <template>
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h1 class="display-5">Site Footer</h1>
+        <div class="f-bg">
+            <div class="container">
+            <div class="row py-5">
+
+                <div class="col-2">
+                    
+                    <div>
+                        <h4 class="text-white">DC COMICS</h4>
+                        <ul class="p-0">
+                            <li>Characters</li>
+                            <li>Comics</li>
+                            <li>Movies</li>
+                            <li>TV</li>
+                            <li>Games</li>
+                            <li>Videos</li>
+                            <li>News</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="text-white">SHOP</h4>
+                        <ul class="p-0">
+                            <li>Shop DC</li>
+                            <li>Shop DC Collectibles</li>
+                        </ul>
+                    </div>
                 </div>
+
+                <div class="col-2">
+                    <div>
+                        <h4 class="text-white">DC</h4>
+                        <ul class="p-0">
+                            <li>Terms Of Use</li>
+                            <li>Privacy policy (New)</li>
+                            <li>Ad Choices</li>
+                            <li>Advertising</li>
+                            <li>Jobs</li>
+                            <li>Subscriptions</li>
+                            <li>Talent Workshop</li>
+                            <li>CPSC Certificates</li>
+                            <li>Ratings</li>
+                            <li>Shop Help</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <div>
+                        <h4 class="text-white">SITES</h4>
+                        <ul class="p-0">
+                            <li>DC</li>
+                            <li>MAD Magazine</li>
+                            <li>DC Kids</li>
+                            <li>DC Universe</li>
+                            <li>DC Power Visa</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-6 d-flex justify-content-end">
+                    <img src="@/assets/img/dc-logo-bg.png" alt="">
+                </div>
+
             </div>
+        </div>
         </div>
     </footer>
 </template>
@@ -16,3 +76,20 @@ export default {
     
 }
 </script>
+
+<style lang="scss" scoped>
+footer{
+    .f-bg{
+        background-image: url(@/assets/img/footer-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        }
+    li{list-style: none; color: gray;}
+    h4{font-weight: bold;}
+    img{
+        width: 600px;
+        position: absolute;
+        transform: translate(0, -150px);
+        }
+}
+</style>
