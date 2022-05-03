@@ -2,6 +2,7 @@
   <div id="app">
     <SiteHeader />
     <SiteMain />
+    <NavCards />
     <SiteFooter />
   </div>
 </template>
@@ -10,6 +11,7 @@
 import SiteMain from "@/components/MainComponent.vue";
 import SiteHeader from "@/components/HeaderComponent.vue";
 import SiteFooter from "@/components/FooterComponent.vue";
+import NavCards from "@/components/NavCardsComponent.vue";
 
 export default {
   name: 'App',
@@ -17,6 +19,7 @@ export default {
     SiteMain,
     SiteHeader,
     SiteFooter,
+    NavCards,
   }
 }
 </script>
