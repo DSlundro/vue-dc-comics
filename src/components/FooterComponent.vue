@@ -116,14 +116,17 @@ footer{
     li{
         list-style: none; 
         color: gray;
-        &hover{color: white;}
+        &:hover{
+            color: white;
+            cursor: pointer;
+            }
         }
     h4{font-weight: bold;}
     .dc-bg{
         img{
         width: 600px;
         position: absolute;
-        transform: translate(0, -150px);
+        transform: translate(0, -145px);
         }
     }
     .contact{
@@ -139,7 +142,9 @@ footer{
         .col-9{height: 100px;
             .social{
                 position: relative;
-                img{width: 22px;}
+                img{
+                    width: 22px;
+                    }
                 a{padding: 0 5px;}
             }
         }
