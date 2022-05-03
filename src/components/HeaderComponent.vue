@@ -3,13 +3,13 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-3 d-flex align-items-center">
+                <div class="col-3 d-flex align-items-center py-3">
                     <img src="@/assets/img/dc-logo.png" alt="">
                 </div>
 
                 <div class="col-9 d-flex justify-content-end align-items-center" >
                     <nav class="navbar navbar-light py-0 px-3" v-for="(nome, index) in navElement" :key="index">
-                        <a href="#" class="py-5">{{nome.name}}</a>
+                        <a href="#">{{nome.name}}</a>
                     </nav>
                 </div>
                 
@@ -67,8 +67,10 @@ export default {
             a{
                 color: #0282F9;
                 text-transform: uppercase;
+                padding: 51px 0;
                 &:hover{
-                    border-bottom: 3px solid #0282F9;
+                    border-top: 4px solid white;
+                    border-bottom: 4px solid #0282F9;
                 }
             }
         }

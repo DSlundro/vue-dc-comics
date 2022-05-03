@@ -113,7 +113,11 @@ footer{
         font-weight: bold;
         border: 3px solid #0282F9;
     }
-    li{list-style: none; color: gray;}
+    li{
+        list-style: none; 
+        color: gray;
+        &hover{color: white;}
+        }
     h4{font-weight: bold;}
     .dc-bg{
         img{
