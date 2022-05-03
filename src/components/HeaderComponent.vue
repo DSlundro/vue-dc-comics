@@ -8,7 +8,7 @@
                 </div>
 
                 <div class="col-9 d-flex justify-content-end align-items-center" >
-                    <nav class="navbar navbar-light py-0 px-3" v-for="(nome, index) in navEelement" :key="index">
+                    <nav class="navbar navbar-light py-0 px-3" v-for="(nome, index) in navElement" :key="index">
                         <a href="#" class="py-5">{{nome.name}}</a>
                     </nav>
                 </div>
@@ -23,7 +23,7 @@ export default {
     name: 'HeaderComponent',
     data(){
         return{
-            navEelement:
+            navElement:
             [
         {
             name: 'characters',

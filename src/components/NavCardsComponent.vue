@@ -2,48 +2,12 @@
     <section>
         <div class="container py-5">
             
-            <div class="row justify-content-around">
-                <div class="col-2">
-                    <div class="d-flex justify-content-center align-items-center">
-                        <img src="@/assets/img/buy-comics-digital-comics.png" alt="Card image cap">
+            <div class="row justify-content-around" >
+                <div class="col-2 d-flex" v-for="({img, text},index) in navCardsElements" :key="index">
+                    <div class="d-flex justify-content-center align-items-center" >
+                        <img :src="require(`@/assets${img}`)" :alt="text">
                         <div class="">
-                            <p class="m-0">digital comics</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-2 d-flex justify-content-center align-items-center">
-                    <div class="d-flex justify-content-center align-items-center">
-                        <img src="@/assets/img/buy-comics-merchandise.png" alt="Card image cap">
-                        <div class="">
-                            <p class="m-0">dc merchandise</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-2 d-flex justify-content-center align-items-center">
-                    <div class="d-flex justify-content-center align-items-center">
-                        <img src="@/assets/img/buy-comics-subscriptions.png" alt="Card image cap">
-                        <div class="">
-                            <p class="m-0">subscription</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-2 d-flex justify-content-center align-items-center">
-                    <div class="d-flex justify-content-center align-items-center">
-                        <img src="@/assets/img/buy-comics-shop-locator.png" alt="Card image cap">
-                        <div class="">
-                            <p class="m-0">comic shop locator</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-2 d-flex justify-content-center align-items-center">
-                    <div class="d-flex justify-content-center align-items-center">
-                        <img src="@/assets/img/buy-dc-power-visa.svg" alt="Card image cap">
-                        <div class="">
-                            <p class="m-0">dc power visa</p>
+                            <p class="m-0">{{text}}</p>
                         </div>
                     </div>
                 </div>
@@ -58,41 +22,30 @@ export default {
     name: 'NavCardsComponent',
     data(){
         return{
-            navCardsEelement:
+            navCardsElements:
             [
         {
-            img: '@/assets/img/buy-comics-digital-comics.png',
-            name: 'digital comics',
+            img: '/img/buy-comics-digital-comics.png',
+            text: 'digital comics',
         },
         {
-            name: 'comics',
+            img: '/img/buy-comics-merchandise.png',
+            text: 'dc merchandise',
         },
         {
-            name: 'movies',
+            img: '/img/buy-comics-subscriptions.png',
+            text: 'subscription',
         },
         {
-            name: 'tv',
+            img: '/img/buy-comics-shop-locator.png',
+            text: 'comic shop locator',
         },
         {
-            name: 'games',
-        },
-        {
-            name: 'collectibles',
-        },
-        {
-            name: 'videos',
-        },
-        {
-            name: 'fans',
-        },
-        {
-            name: 'news',
-        },
-        {
-            name: 'shop',
+            img: '/img/buy-dc-power-visa.svg',
+            text: 'dc power visa',
         },
     ]
-        }
+    }
     }
 }
 </script>
