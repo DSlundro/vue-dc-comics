@@ -15,6 +15,7 @@
                     
                     <div class="col-12 d-flex py-5 px-4 gap-5 flex-wrap justify-content-center">
                         <SiteDates :title="comics.series" :img="comics.thumb" :price="comics.price" v-for="(comics, index) in listDates" :key="index"/>
+                        
                         <div class="col-12 text-center">
                             <a href="#" class="btn-load text-white">LOAD MORE</a>
                         </div>
@@ -117,37 +118,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-main{
-    .w-100{
-        position: relative;
-        height: 400px;
-        img{
-            margin: auto;
-            width: 100%;
-            position: absolute;
-        }
-    }
-    .bg-dark{position: relative; z-index: 1;}
-    .container{
-    position: relative;
-    .btn-cards{
-        background-color: $primary;
-        font-size: 24px;
-        border: none;
-        padding: 10px 20px;
-        position: absolute;
-        &:hover{
-            background-color: $shadow-blue;
-        }
-    }
-    .btn-load{
-        background-color: $primary;
-        border: none;
-        padding: 10px 25px;
-        &:hover{
-            background-color: $shadow-blue;
-        }
-    }
-}
-}
+
 </style>

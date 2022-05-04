@@ -25,18 +25,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.card{
-    &:hover{
-        cursor: pointer;
-        box-shadow: 0 0 5px $light;
-    }
-    h5{
-        text-transform: uppercase;
-        font-size: 15px;
-    }
-    img{
-    width: 100%;
-    aspect-ratio: 1/1;
-}
-}
+
 </style>

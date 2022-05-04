@@ -72,17 +72,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    header{
-        nav{
-            a{
-                color: $primary;
-                text-transform: uppercase;
-                padding: 51px 0;
-                &:hover{
-                    border-top: 4px solid $light;
-                    border-bottom: 4px solid $primary;
-                }
-            }
-        }
-    }
+
 </style>
