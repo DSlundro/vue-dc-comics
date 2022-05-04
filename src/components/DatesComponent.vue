@@ -7,6 +7,7 @@
                 <a href="#" class="btn btn-primary">Buy {{price}}</a>
             </div>
         </div>
+        
 
 </template>
 
@@ -24,8 +25,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-img{
+.card{
+    &:hover{
+        cursor: pointer;
+        box-shadow: 0 0 5px $light;
+    }
+    h5{
+        text-transform: uppercase;
+        font-size: 15px;
+    }
+    img{
     width: 100%;
     aspect-ratio: 1/1;
+}
 }
 </style>
