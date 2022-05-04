@@ -5,7 +5,7 @@
             <div class="row justify-content-around" >
                 <div class="col-2 d-flex" v-for="({img, text},index) in navCardsElements" :key="index">
                     <div class="d-flex justify-content-center align-items-center" >
-                        <img :src="require(`@/assets${img}`)" :alt="text">
+                        <img :src="img" :alt="text">
                         <div class="">
                             <p class="m-0">{{text}}</p>
                         </div>
@@ -25,23 +25,23 @@ export default {
             navCardsElements:
             [
         {
-            img: '/img/buy-comics-digital-comics.png',
+            img: require('@/assets/img/buy-comics-digital-comics.png'),
             text: 'digital comics',
         },
         {
-            img: '/img/buy-comics-merchandise.png',
+            img: require('@/assets/img/buy-comics-merchandise.png'),
             text: 'dc merchandise',
         },
         {
-            img: '/img/buy-comics-subscriptions.png',
+            img: require('@/assets/img/buy-comics-subscriptions.png'),
             text: 'subscription',
         },
         {
-            img: '/img/buy-comics-shop-locator.png',
+            img: require('@/assets/img/buy-comics-shop-locator.png'),
             text: 'comic shop locator',
         },
         {
-            img: '/img/buy-dc-power-visa.svg',
+            img: require('@/assets/img/buy-dc-power-visa.svg'),
             text: 'dc power visa',
         },
     ]
@@ -55,7 +55,7 @@ export default {
 section{
     position: relative;
     z-index: 1;
-    background-color: #0282F9;
+    background-color:$primary;
     
     img{width: 40px;}
     p{

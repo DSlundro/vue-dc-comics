@@ -8,8 +8,8 @@
                 </div>
 
                 <div class="col-9 d-flex justify-content-end align-items-center" >
-                    <nav class="navbar navbar-light py-0 px-3" v-for="(nome, index) in navElement" :key="index">
-                        <a href="#">{{nome.name}}</a>
+                    <nav class="navbar navbar-light py-0 px-3" v-for="({text, href}, index) in navElement" :key="index">
+                        <a :href="href">{{text}}</a>
                     </nav>
                 </div>
                 
@@ -26,34 +26,44 @@ export default {
             navElement:
             [
         {
-            name: 'characters',
+            text: 'characters',
+            href: '#',
         },
         {
-            name: 'comics',
+            text: 'comics',
+            href: '#',
         },
         {
-            name: 'movies',
+            text: 'movies',
+            href: '#',
         },
         {
-            name: 'tv',
+            text: 'tv',
+            href: '#',
         },
         {
-            name: 'games',
+            text: 'games',
+            href: '#',
         },
         {
-            name: 'collectibles',
+            text: 'collectibles',
+            href: '#',
         },
         {
-            name: 'videos',
+            text: 'videos',
+            href: '#',
         },
         {
-            name: 'fans',
+            text: 'fans',
+            href: '#',
         },
         {
-            name: 'news',
+            text: 'news',
+            href: '#',
         },
         {
-            name: 'shop',
+            text: 'shop',
+            href: '#',
         },
     ]
         }
@@ -65,12 +75,12 @@ export default {
     header{
         nav{
             a{
-                color: #0282F9;
+                color: $primary;
                 text-transform: uppercase;
                 padding: 51px 0;
                 &:hover{
-                    border-top: 4px solid white;
-                    border-bottom: 4px solid #0282F9;
+                    border-top: 4px solid $light;
+                    border-bottom: 4px solid $primary;
                 }
             }
         }

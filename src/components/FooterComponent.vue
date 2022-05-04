@@ -109,15 +109,20 @@ footer{
         background-size: 100%;
         }
     button{
-        color: white;
+        color: $light;
         font-weight: bold;
-        border: 3px solid #0282F9;
+        border: 3px solid $primary;
+        &:hover{
+            color: $shadow-gray;
+            border: 3px solid $shadow-blue;
+            box-shadow: 0 0 3px $light;
+        }
     }
     li{
         list-style: none; 
         color: gray;
         &:hover{
-            color: white;
+            color: $light;
             cursor: pointer;
             }
         }
@@ -132,11 +137,14 @@ footer{
     .contact{
         position: relative;
         z-index: 1;
-        background-color: #303030;
+        background-color: $bg-contact;
         width: 100%;
 
         .follow-us a{
-            color: #0282F9;
+            color: $primary;
+            &:hover{
+                color: $shadow-blue;
+            }
         }
 
         .col-9{height: 100px;
@@ -144,6 +152,9 @@ footer{
                 position: relative;
                 img{
                     width: 22px;
+                    &:hover{
+                        text-shadow: 0 0 2px $light;
+                    }
                     }
                 a{padding: 0 5px;}
             }
