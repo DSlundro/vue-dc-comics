@@ -13,7 +13,7 @@
                         </div>
                     </div>
                     
-                    <div class="col-12 d-flex py-5 px-4 gap-5">
+                    <div class="col-12 d-flex py-5 px-4 gap-5 flex-wrap justify-content-center">
                         <SiteDates :title="comics.series" :img="comics.thumb" :price="comics.price" v-for="(comics, index) in listDates" :key="index"/>
                     </div>
                 </div>
