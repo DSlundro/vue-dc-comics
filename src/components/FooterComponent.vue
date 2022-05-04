@@ -71,7 +71,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-3 d-flex align-items-center">
-                        <button type="button" class="btn">SIGN-UP NOW!</button>
+                        <button type="button" class="btn f-btn">SIGN-UP NOW!</button>
                     </div>
 
                     <div class="col-9 d-flex justify-content-end align-items-center">
@@ -103,12 +103,15 @@ export default {
 
 <style lang="scss" scoped>
 footer{
+    position: relative;
+    z-index: 1;
     .f-bg{
         background-image: url(@/assets/img/footer-bg.jpg);
         background-repeat: no-repeat;
         background-size: 100%;
         }
-    button{
+
+        .f-btn{
         color: $light;
         font-weight: bold;
         border: 3px solid $primary;

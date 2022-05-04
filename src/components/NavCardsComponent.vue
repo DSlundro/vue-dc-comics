@@ -54,7 +54,7 @@ export default {
 <style lang="scss" scoped>
 section{
     position: relative;
-    z-index: 1;
+    z-index: 2;
     background-color:$primary;
     
     img{width: 40px;}
